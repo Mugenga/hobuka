@@ -49,11 +49,13 @@ class ElectriDataSystem
 	public function CreateAdmin($firstname = "", $lastname="",$age=0)
 	{
 		$admin = new Admin($firstname, $lastname,$age);
+		$admin->RegisterAccount();
 		array_push($this->admins,$admin);
 	}
 	public function CreateCustomer($firstname = "", $lastname="",$age=0)
 	{
 		$cus = new Customer($firstname, $lastname,$age);
+		$cus->RegisterAccount();
 		array_push($this->customers,$cus);
 	}
 	public function CreatePreOrder(Customer $customer,$amount)
@@ -105,11 +107,22 @@ class ElectriDataSystem
 	 * Getters
 	 * #########################################################################
 	 */
-	public function GetCustomer($by="username")
+	public function GetCustomer($by="name")
 	{
 		if(count($this->customers) > 0) return $this->customers[0];
 		return False;
 	}
+	public function GetAdmin($by="name")
+	{
+		if(count($this->admins) > 0) return $this->admins[0];
+		return False;
+	}
+	public function GetSuperAdmin($by="name")
+	{
+		if(count($this->superAdmins) > 0) return $this->admins[0];
+		return False;
+	}
+
 	public function GetDailyUsage()
 	{
 		# code...

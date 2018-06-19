@@ -21,7 +21,7 @@ abstract class Account
 		$this->accountID = rand(100,10000);
 	}
 
-	abstract public function RegisterAccount($passCode);
+	abstract public function RegisterAccount();
 
 	public function SetFirstName($fname) {$this->firstName = $fname;}
 	public function SetLastName($lname)  {$this->lastName  = $lname;}

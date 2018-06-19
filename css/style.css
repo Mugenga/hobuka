@@ -31,6 +31,7 @@
 	color:red;
 	margin-top:30px;
 }
+
 /*  This section is a style sheet for the Homepageof the Dashboard*/
 /* The sidebar menu */
 .sidenav {
@@ -65,3 +66,9 @@
 		width: 85%;
 		margin-left: 10%;
 }
+
+
+body	{
+	text-align: center;
+}
+

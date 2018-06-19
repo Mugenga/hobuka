@@ -67,12 +67,16 @@ class Customer extends Account
 				Orders <br>".$str."<br><br>";
 	}
 
-	public function RegisterAccount($passCode)
+	public function RegisterAccount()
 	{
 		$values = "(".$this->GetAccountID().", '".$this->GetfName()."', '".$this->GetlName()."', '";
-		$values = $values.$this->GetUserName()."', ".$this->GetAge().", '".$passCode."')";
-		$sql = "INSERT INTO `Customers` (`ID`, `firstName`, `lastName`, `userName`, `age`, `passCode`)  VALUES ".$values;
+		$values = $values.$this->GetUserName()."', ".$this->GetAge()."')";
+		// $sql = "INSERT INTO `Customers` (`ID`, `firstName`, `lastName`, `userName`, `age`)  VALUES ".$values;
 
+		// if(mysqli_query($connection, $sql)) echo "Success";
+		// else echo "failed";
+
+		// echo $sql;
 		return $sql;
 	}
 
