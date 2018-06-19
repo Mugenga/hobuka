@@ -1,31 +1,35 @@
 <?php
 
-// Server Info
-$server = "localhost";
-$user = "root";
-$password = "";
+class Conn
+{
+	// Server Info
+	public $server;
+	public $user;
+	public $password;
 
-// Database
+	//connection
+	public $conn;
+
+	function __construct()
+	{
+		$this->server = "localhost";
+		$this->user = "root";
+		$this->password = "";
+
+		// Creating a connection
+		$this->conn = mysqli_connect($this->server, $this->user, $this->password);
+		// Checking the connection
+		if (!$this->conn) die("Connection failed: " . mysqli_connect_error());
+
+		if(!mysqli_select_db($this->conn, "ElectriData")) die("Not connected to default database");
+	} 
+
+}
 
 
-// Creating a connection
-$connection = mysqli_connect($server, $user, $password);
+$conn = new Conn();
+$connection = $conn->conn;
 
-// Checking the connection
-if (!$connection) die("Connection failed: " . mysqli_connect_error());
-if(!mysqli_select_db($connection, "ElectriData")) die("Not connected to default database");
-// $sql = "CREATE Database ElectriData";
-
-// if(mysqli_query($connection,$sql)) echo "Database Created successfully";
-// else echo "Database creation failed";
-
-/// Database Creation successful
-
-
-
-// read from database
-
-
-
+// var_dump($connection);
 
 ?>

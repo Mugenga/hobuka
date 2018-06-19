@@ -13,11 +13,11 @@ class SuperAdmin extends Admin
 		# code...
 	}
 
-	public function RegisterAccount($passCode)
+	public function RegisterAccount(/*$passCode*/)
 	{
 		$values = "(".$this->GetAccountID().", '".$this->GetfName()."', '".$this->GetlName()."', '";
-		$values = $values.$this->GetUserName()."', ".$this->GetAge().", '".$passCode."')";
-		$sql = "INSERT INTO `SuperAdmins` (`ID`, `firstName`, `lastName`, `userName`, `age`, `passCode`)  VALUES ".$values;
+		$values = $values.$this->GetUserName()."', ".$this->GetAge();//.", '".$passCode."')";
+		$sql = "INSERT INTO `SuperAdmins` (`ID`, `firstName`, `lastName`, `userName`, `age`)  VALUES ".$values;
 	}
 
 }

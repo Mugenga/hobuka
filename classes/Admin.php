@@ -16,12 +16,15 @@ class Admin extends Account
 	public function RegisterAccount(/*$passCode*/)
 	{
 		$values = "(".$this->GetAccountID().", '".$this->GetfName()."', '".$this->GetlName()."', '";
-		$values = $values.$this->GetUserName()."', ".$this->GetAge();//.", '".$passCode."')";
-		$sql = "INSERT INTO `Admins` (`ID`, `firstName`, `lastName`, `userName`, `age`, `passCode`)  VALUES ".$values;
+		$values = $values.$this->GetUserName()."', ".$this->GetAge()."')";
+		// $sql = "INSERT INTO `Admins` (`ID`, `firstName`, `lastName`, `userName`, `age`)  VALUES ".$values;
 
-		$query = mysqli_query($c);
 
-		if($query && mysqli_num_rows($query) > 0)
+		// $query = mysqli_query($c);
+
+		// if($query && mysqli_num_rows($query) > 0)
+		echo $sql;
+		return $sql;
 	}
 
 }
