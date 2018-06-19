@@ -1,12 +1,12 @@
-<?php 
+<?php
 include_once "Account.php";
 
 /**
- * 
+ *
  */
 class Admin extends Account
 {
-	
+
 	function __construct($firstname = "", $lastname="",$age=0)
 	{
 		parent::__construct($firstname,$lastname,$age);
@@ -21,7 +21,7 @@ class Admin extends Account
 
 		$query = mysqli_query($c);
 
-		if($query && mysqli_num_rows($query) > 0)
+		if($query && mysqli_num_rows($query) > 0);
 	}
 
 }
