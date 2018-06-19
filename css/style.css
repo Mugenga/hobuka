@@ -1,0 +1,33 @@
+#Title {
+	text-align: center;
+}
+
+
+#loggingIn {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.loginPage {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.loginPage label {
+	display: block;
+	margin: 40px;
+}
+
+.loginPage .category {
+	font-weight: bold;
+}
+
+.loginPage #userType span {
+	margin: 20px;
+}
+.errorString {
+	position: relative;
+	text-align:center;
+	color:red;
+	margin-top:30px;
+}
