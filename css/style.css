@@ -31,3 +31,37 @@
 	color:red;
 	margin-top:30px;
 }
+/*  This section is a style sheet for the Homepageof the Dashboard*/
+/* The sidebar menu */
+.sidenav {
+    height: 100%;
+    width:15%;
+    position: fixed;
+    /* z-index: 1; /* Stay on top */ */
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+    padding: 0px 10px;
+		background-color: white;
+		width: 85%;
+		margin-left: 10%;
+}

@@ -1,16 +1,41 @@
-<?php 
-include_once "config.php";
-include_once "classes/ElectriDataSystem.php";
-
+<?php
+// include_once "classes/ElectriDataSystem.php";
+// Include the header file for the account page
+include("includes/head.php");
 
 // $admin = new SuperAdmin();
-
+//
 // $system = new ElectriDataSystem($admin);
 // $system->CreateCustomer();
+?>
+  <!-- Page content -->
+  <div class="main">
+    ... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+    anim id est laborum.
+  </div>
+<?php include "footer.php" ?>
 
 
-$admin = new Admin("sam","sam",10);
-echo $admin->RegisterAccount("sam");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
