@@ -1,12 +1,12 @@
 <?php
-// include_once "classes/ElectriDataSystem.php";
+include_once "classes/ElectriDataSystem.php";
 // Include the header file for the account page
 include("includes/head.php");
 
-// $admin = new SuperAdmin();
-//
-// $system = new ElectriDataSystem($admin);
-// $system->CreateCustomer();
+$admin = new SuperAdmin();
+
+$system = new ElectriDataSystem($admin);
+$system->CreateCustomer();
 ?>
   <!-- Page content -->
   <div class="main">

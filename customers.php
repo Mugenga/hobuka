@@ -7,6 +7,15 @@ if(isset($_GET['method']) && $_GET['method'] =='new'){
   <!-- Page content -->
   <div class="main">
     ... new customer form goes here
+    <!-- New customers form -->
+    <form class="" action="#" method="POST">
+      <h1>Customer Registration</h1>
+      <label id="firstname">First Name: <input type="text" name="username"></label>
+      <label id="lastname">Last Name: <input type="text" name="username"></label>
+      <label id="username">Username <input type="text" name="username"></label>
+      <label id="age">Age <input type="text" name="username"></label>
+      <label id="submitButton"> <input type="submit" name="submit" value="Register"></label>
+    </form>
 
   </div>
 <?php
